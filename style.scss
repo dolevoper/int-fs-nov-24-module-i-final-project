@@ -1,0 +1,74 @@
+$primary: #3f6ff3;
+$secondary: #e2e9fd;
+$neutral-300: #f8f9fb;
+$neutral-400: #eceff4;
+$neutral-500: #c5cfdd;
+$neutral-600: #a2aab3;
+$green: #70d36b;
+$yellow: #ffcb05;
+$red: #ff5d54;
+
+
+.flex-screen {
+    display: flex;
+    flex-direction: row;
+}
+
+.calender {
+    flex: 1;
+    background-color: $neutral-300;
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 5% repeat(7, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        justify-items: center;
+    }
+
+    &--first-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--secend-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#color-int {
+    color: $primary;
+    font-size: 1.5rem;
+    font-family: initial;
+    font-weight: 800;
+}
+
+svg {
+    height: 1.5em;
+    width: auto;
+}
+
+.nav-bar {
+    padding: 2px;
+
+    &--first {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    &--secend {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
