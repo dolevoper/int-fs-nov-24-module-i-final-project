@@ -1,0 +1,49 @@
+body{
+    display: flex;
+}
+
+.side-bar{
+    padding: 0.3rem;
+    svg{
+        display: flex;
+    }
+
+    .middle-sidebar{
+        justify-content: space-around;
+    }
+}
+
+
+main{
+    flex: 1;
+    
+        .top-header{
+            display: flex;
+            text-align: center;
+            padding: 0.3rem;
+
+            svg{
+                margin-top: 0.6rem;
+                margin-inline: 0.3rem;
+            }
+        }
+        
+        .toggle{
+            flex: 1;
+            margin-top: 0.3rem;
+        }
+        
+        .second-header{
+            display: flex;
+
+            .chevron{
+                display: flex;
+                
+            }
+
+            button{
+                margin-inline: 0.4rem;
+            }
+        }
+
+    }
