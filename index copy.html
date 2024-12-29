@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App</title>
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+</head>
+<body class="u-reset u-bg-neutral-300 u-text">
+  <header class="o-header">
+    <div class="o-header__logo">INT</div>
+    <nav class="o-header__nav">
+      <button class="o-header__toggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <aside class="o-sidebar">
+    <ul class="o-sidebar__menu">
+      <li><a href="#" class="o-sidebar__link">Dashboard</a></li>
+      <li><a href="#" class="o-sidebar__link">Calendar</a></li>
+      <li><a href="#" class="o-sidebar__link">Messages</a></li>
+      <li><a href="#" class="o-sidebar__link">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main class="o-calendar">
+    <div class="o-calendar__header">
+      <button class="o-calendar__button">Week</button>
+      <button class="o-calendar__button o-calendar__button--today">Today</button>
+
+      <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-423.000000, -1196.000000)"
+                fill="#000000">
+                <path
+                    d="M428.115,1209 L437.371,1200.6 C438.202,1199.77 438.202,1198.43 437.371,1197.6 C436.541,1196.76 435.194,1196.76 434.363,1197.6 L423.596,1207.36 C423.146,1207.81 422.948,1208.41 422.985,1209 C422.948,1209.59 423.146,1210.19 423.596,1210.64 L434.363,1220.4 C435.194,1221.24 436.541,1221.24 437.371,1220.4 C438.202,1219.57 438.202,1218.23 437.371,1217.4 L428.115,1209"
+                    id="chevron-left" sketch:type="MSShapeGroup"> </path>
+            </g>
+        </g>
+    </svg>
+      <h1 class="o-calendar__title">August 2023</h1>
+      <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-474.000000, -1196.000000)"
+                fill="#000000">
+                <path
+                    d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+                    id="chevron-right" sketch:type="MSShapeGroup"> </path>
+            </g>
+        </g>
+    </svg>
+    </div>
+
+    <div class="o-calendar__grid">
+      <!-- Header Row -->
+      <div class="o-calendar__cell o-calendar__column--time"></div>
+      <div class="o-calendar__cell">SUN</div>
+      <div class="o-calendar__cell">MON</div>
+      <div class="o-calendar__cell">TUE</div>
+      <div class="o-calendar__cell">WED</div>
+      <div class="o-calendar__cell">THU</div>
+      <div class="o-calendar__cell">FRI</div>
+      <div class="o-calendar__cell">SAT</div>
+
+      <!-- Time and Day Rows -->
+      <div class="o-calendar__cell o-calendar__column--time">8:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+      <div class="o-calendar__cell o-calendar__column--time">9:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">10:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">11:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">12:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">13:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">14:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">15:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">16:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">17:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">18:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">19:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">20:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+
+      <div class="o-calendar__cell o-calendar__column--time">21:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+
+      <div class="o-calendar__cell o-calendar__column--time">22:00</div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+      <div class="o-calendar__cell"></div>
+    </div>
+  </main>
+
+  <footer class="o-footer">
+    <p>Calendar App &copy; 2023</p>
+  </footer>
+</body>
+</html>
