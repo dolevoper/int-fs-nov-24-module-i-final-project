@@ -9,4 +9,8 @@
   --yellow: #ffcb05;
   --red: #ff5d54;
   --font-family: "Roboto Slab", serif;
+  --text-color: #333;
+  --sidebar-width: 250px;
+  --sidebar-collapsed-width: 60px;
+  --transition-speed: 0.3s;
 }
