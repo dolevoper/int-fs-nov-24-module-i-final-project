@@ -71,8 +71,21 @@
 .calendar {
   grid-area: 2/2/13/13;
   display: grid;
-  grid-template: repeat(7, 1fr)/repeat(11, 1fr);
+  grid-template: repeat(12, 1fr)/repeat(8, 1fr);
   border: solid 1px gray;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  grid-area: 1/2/1/8;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: 2/1/13/1;
 }
 
 /* Exception */
