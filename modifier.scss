@@ -65,4 +65,17 @@
   .create-event-btn:hover {
     background-color: #357ab8; 
   }
-  
+
+ 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 8px;
+}
+
+
+
+
+
+        
