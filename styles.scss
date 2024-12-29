@@ -19,7 +19,7 @@
 }
 
 $bp-mobile: 27rem;
-$bp-tablet: 57rem;
+$bp-tablet: 48rem;
 
 
 //************* RESET ***********
@@ -84,6 +84,9 @@ main{
     flex-direction: row;
     width: 100vw;    
     height: 100vh;
+    @media screen and (max-width: $bp-tablet) {
+        flex-direction: column;
+    }
 }
 .calendar-grid{
     display: grid;
@@ -137,12 +140,27 @@ main{
     border-radius: 1rem;
 }
 
+.u-radius-8{
+    border-radius: 0.5rem;
+}
+
+.u-padding-8{
+    padding: 0.5rem;
+}
 .u-secondary{
     color: var(--neutral-600);
 }
 
 .u-primary{
     color: var(--primatry-color);
+}
+
+.u-bg-primary{
+    background-color: var(--primatry-color);
+}
+
+.u-bg-secondary{
+    background-color: var(--secondary-color);
 }
 
 .u-font-32{
@@ -152,6 +170,15 @@ main{
 .u-font-24{
     font-size: 1.5rem;
 }
+
+.u-center{
+    text-align: center;
+}
+
+.u-margin-16{
+    margin: 1rem;
+}
+
 // ******** End of Utilities *****
 
 // ********* Block ************
@@ -160,15 +187,57 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: var(--min-menu-gap, 1rem);
     margin-left: 1rem;
     margin-right: 1rem;
-    
+    :nth-child(2){
+        margin-left: auto;
+    }
+    :nth-last-child(2) {
+        margin-left: auto;
+    }
+}
+
+.secondary-menu{
+    height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--min-menu-gap, 1rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    :nth-child(2){
+        margin-right: auto;
+    }
+    :last-child{
+        margin-right: auto;
+    }
+}
+
+.kebab{
+    background-color: var(--secondary-color);
+    color: var(--primatry-color);
 }
 
 .sidebar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--min-menu-gap, 1rem);
     width: 4rem;
     font-size: 1.5rem;
+    @media screen and (max-width: $bp-tablet) {
+        flex-direction: row;
+        height: 4rem;
+        width: 100%;
+        :nth-child(n+2){
+            display: hidden;
+        }
+    }
 }
 
 .logo{
@@ -196,22 +265,18 @@ main{
 }
 .item01{
     grid-area: 2 / 2 / 4 /3;
-    text-align: center;
 }
 
 .item02{
-    grid-area: 4 / 4 / 5 /5;
-    text-align: center;
+    grid-area: 4 / 4 / 5 /5;    
 }
 
 .item03{
     grid-area:  3 / 5 / 6 /6;;
-    text-align: center;
 }
 
 .item04{
-    grid-area: 7 / 5 / 9 /6;
-    text-align: center;
+    grid-area: 7 / 5 / 9 /6;     
 }
 
 // ******END of Block
