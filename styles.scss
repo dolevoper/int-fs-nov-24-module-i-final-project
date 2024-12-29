@@ -1,10 +1,7 @@
 /* Composition */
-.layout-flex-column{
-    display: flex;
-    flex-direction: column;
-}
 
-.layout-grid-12-12{
+
+.layout-grid{
     display: grid;
     grid-template: repeat(12,1fr) / repeat(12,1fr);
 }
@@ -12,39 +9,39 @@
 /* Utility */
 
 .primary {
-    color: #3f6ff3;
+    background-color: #3f6ff3;
 }
 
 .secondary {
-    color: #e2e9fd;
+    background-color: #e2e9fd;
 }
 
 .neutral-300 {
-    color: #f8f9fb;
+    background-color: #f8f9fb;
 }
 
 .neutral-400 {
-    color: #eceff4;
+    background-color: #eceff4;
 }
 
 .neutral-500 {
-    color: #c5cfdd;
+    background-color: #c5cfdd;
 }
 
 .neutral-600 {
-    color: #a2aab3;
+    background-color: #a2aab3;
 }
 
 .green {
-    color: #70d36b;
+    background-color: #70d36b;
 }
 
 .yellow {
-    color: #ffcb05;
+    background-color: #ffcb05;
 }
 
 .red {
-    color: #ff5d54;
+    background-color: #ff5d54;
 }
 
 .font-text{
@@ -60,6 +57,12 @@
 }
 
 /* Block */
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
 
 /* Exception */
 
