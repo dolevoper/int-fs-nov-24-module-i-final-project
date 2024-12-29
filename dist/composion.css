@@ -5,15 +5,33 @@ body {
 .side-bar {
   padding: 0.3rem;
 }
-.side-bar svg {
+.side-bar li {
+  margin-top: 18rem;
+  list-style: none;
+}
+.side-bar .top-sidebar {
   display: flex;
+  flex-direction: column;
+}
+.side-bar .top-sidebar svg {
+  font-size: 1.8rem;
+  margin-left: 0.3rem;
+  margin-top: 1rem;
 }
 .side-bar .middle-sidebar {
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.side-bar .middle-sidebar svg {
+  font-size: 1.8rem;
+  margin-left: 0.3rem;
+  margin-top: 2.4rem;
 }
 
 main {
   flex: 1;
+  margin-left: 0.5rem;
 }
 main .top-header {
   display: flex;
@@ -30,6 +48,7 @@ main .toggle {
 }
 main .second-header {
   display: flex;
+  margin-bottom: 0.8rem;
 }
 main .second-header li {
   list-style: none;
@@ -55,9 +74,8 @@ main .top-main li {
 main .side-main {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 main .side-main li {
-  flex: 1;
+  margin-bottom: 1.4rem;
   color: white;
 }
