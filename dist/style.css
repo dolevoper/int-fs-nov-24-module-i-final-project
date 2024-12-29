@@ -9,8 +9,9 @@
 }
 .calender--grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 5% repeat(7, 1fr);
   grid-template-rows: repeat(11, 1fr);
+  justify-items: center;
 }
 .calender--first-row {
   display: flex;
