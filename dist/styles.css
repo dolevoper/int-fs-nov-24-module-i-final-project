@@ -1,0 +1,103 @@
+/* Composition */
+.layout-grid {
+  display: grid;
+  grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+}
+
+/* Utility */
+.bold {
+  font-weight: bold;
+}
+
+.text-primary {
+  color: #3f6ff3;
+}
+
+.primary {
+  background-color: #3f6ff3;
+}
+
+.secondary {
+  background-color: #e2e9fd;
+}
+
+.neutral-300 {
+  background-color: #f8f9fb;
+}
+
+.neutral-400 {
+  background-color: #eceff4;
+}
+
+.neutral-500 {
+  background-color: #c5cfdd;
+}
+
+.neutral-600 {
+  background-color: #a2aab3;
+}
+
+.green {
+  background-color: #70d36b;
+}
+
+.yellow {
+  background-color: #ffcb05;
+}
+
+.red {
+  background-color: #ff5d54;
+}
+
+.font-text {
+  font-family: Roboto Slab;
+}
+
+.margin-bottom-auto {
+  margin-bottom: auto;
+}
+
+/* Block */
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #3f6ff3;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+  border: solid 1px black;
+  grid-row: 1/span 12;
+}
+
+.calendar {
+  grid-area: 2/2/13/13;
+  display: grid;
+  grid-template: repeat(12, 1fr)/repeat(8, 1fr);
+  border: solid 1px gray;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  grid-area: 1/2/1/9;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: 2/1/13/1;
+}
+
+svg {
+  color: #c5cfdd;
+}
+
+/* Exception */
