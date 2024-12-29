@@ -9,40 +9,65 @@ $yellow: #ffcb05;
 $red: #ff5d54;
 
 
-.flex-screen{
+.flex-screen {
     display: flex;
     flex-direction: row;
 }
 
-.calender{
+.calender {
     flex: 1;
     background-color: $neutral-300;
 
-    &--grid{
+    &--grid {
         display: grid;
-        grid-template-columns: repeat(8, 1fr); /* 8 עמודות בגודל שווה */
-        grid-template-rows: repeat(11, 1fr); /* 11 שורות בגודל שווה */
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(11, 1fr);
     }
 
-    &--first-row{
+    &--first-row {
         display: flex;
         justify-content: space-between;
     }
 
-    &--secend-row{
+    &--secend-row {
         display: flex;
         justify-content: space-between;
     }
 }
 
-#color-int{
+#color-int {
     color: $primary;
     font-size: 1.5rem;
     font-family: initial;
     font-weight: 800;
 }
 
-svg{
+svg {
     height: 1.5em;
     width: auto;
+}
+
+.nav-bar {
+    padding: 2px;
+
+    &--first {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    &--secend {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

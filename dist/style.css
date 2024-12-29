@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .flex-screen {
   display: flex;
   flex-direction: row;
@@ -11,9 +10,7 @@
 .calender--grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  /* 8 עמודות בגודל שווה */
   grid-template-rows: repeat(11, 1fr);
-  /* 11 שורות בגודל שווה */
 }
 .calender--first-row {
   display: flex;
@@ -34,4 +31,27 @@
 svg {
   height: 1.5em;
   width: auto;
+}
+
+.nav-bar {
+  padding: 2px;
+}
+.nav-bar--first {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+.nav-bar--secend {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
