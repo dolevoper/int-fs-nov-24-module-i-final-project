@@ -130,6 +130,14 @@ body {
     background-color: var(--neutral-300);
     border-top: 1px solid var(--neutral-400);
   }
+  .o-calendar__header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: var(--neutral-300);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
   
 
   /* Toggle Button */
