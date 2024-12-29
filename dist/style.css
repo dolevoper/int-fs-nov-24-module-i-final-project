@@ -1,0 +1,13 @@
+.flex-screen {
+  display: flex;
+  flex-direction: row;
+}
+
+.calender {
+  flex: 1;
+  background-color: #f8f9fb;
+}
+
+#color-int {
+  color: #3f6ff3;
+}

@@ -1,0 +1,24 @@
+$primary: #3f6ff3;
+$secondary: #e2e9fd;
+$neutral-300: #f8f9fb;
+$neutral-400: #eceff4;
+$neutral-500: #c5cfdd;
+$neutral-600: #a2aab3;
+$green: #70d36b;
+$yellow: #ffcb05;
+$red: #ff5d54;
+
+
+.flex-screen{
+    display: flex;
+    flex-direction: row;
+}
+
+.calender{
+    flex: 1;
+    background-color: $neutral-300;
+}
+
+#color-int{
+    color: $primary;
+}
