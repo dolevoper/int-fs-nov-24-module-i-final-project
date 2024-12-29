@@ -7,6 +7,13 @@
 }
 
 /* Utility */
+.bold{
+    font-weight: bold;
+}
+
+.text-primary{
+    color: #3f6ff3;
+}
 
 .primary {
     background-color: #3f6ff3;
@@ -45,7 +52,7 @@
 }
 
 .font-text{
-    Font: Roboto Slab;
+    font-family: Roboto Slab;
 }
 
 .margin-bottom-auto{
