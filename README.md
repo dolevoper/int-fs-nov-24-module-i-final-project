@@ -1,4 +1,4 @@
-# Module I Final Project #
+# Module I Final Project ##
 
 ## The goal
 Replicate the given design.
