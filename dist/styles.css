@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ul, ol, menu {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+input {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  appearance: none;
+  border: none;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.main {
+  display: grid;
+}
+
+.grid8-12 {
+  display: grid;
+  grid-template: repeat(8, 1fr)/repeat(12, 1fr);
+  overflow: hidden;
+  gap: 0.2rem;
+}
+.grid8-12 > .hours {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/13;
+  grid-template-rows: subgrid;
+  grid-auto-flow: row;
+}
+.grid8-12 > .hours > li {
+  display: contents;
+}
+.grid8-12 > .days {
+  display: grid;
+  grid-column: 2/9;
+  grid-row: 1/2;
+  grid-template-columns: subgrid;
+  grid-auto-flow: column;
+}
+.grid8-12 > .days > li {
+  display: contents;
+}
