@@ -23,4 +23,8 @@ body {
     font-family: system-ui;
     line-height: 1.5;
     /* main color */
+
+    *{
+        border: solid black 0.5px;
+    }
 }

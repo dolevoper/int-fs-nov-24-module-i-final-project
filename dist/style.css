@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .flex-screen {
   display: flex;
   flex-direction: row;
@@ -6,6 +7,13 @@
 .calender {
   flex: 1;
   background-color: #f8f9fb;
+}
+.calender--grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* 8 עמודות בגודל שווה */
+  grid-template-rows: repeat(11, 1fr);
+  /* 11 שורות בגודל שווה */
 }
 
 #color-int {

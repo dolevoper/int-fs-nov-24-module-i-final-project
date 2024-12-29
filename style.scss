@@ -17,6 +17,12 @@ $red: #ff5d54;
 .calender{
     flex: 1;
     background-color: $neutral-300;
+
+    &--grid{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 8 עמודות בגודל שווה */
+        grid-template-rows: repeat(11, 1fr); /* 11 שורות בגודל שווה */
+    }
 }
 
 #color-int{

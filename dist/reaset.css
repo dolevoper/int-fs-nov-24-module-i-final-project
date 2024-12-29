@@ -24,3 +24,6 @@ body {
   line-height: 1.5;
   /* main color */
 }
+body * {
+  border: solid black 0.5px;
+}
