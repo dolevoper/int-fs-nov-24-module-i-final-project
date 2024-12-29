@@ -219,8 +219,8 @@ main {
     height: 4rem;
     width: 100%;
   }
-  .sidebar :nth-child(n+2) {
-    display: hidden;
+  .sidebar :nth-child(4) {
+    display: none;
   }
 }
 
