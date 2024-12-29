@@ -85,9 +85,15 @@
 
 .o-calendar__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.o-calendar__button-group {
+  display: flex;
+  gap: 1rem;
+  margin-right: auto;
 }
 
 .o-calendar__button {
@@ -108,21 +114,23 @@
 }
 
 .o-calendar__title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
+  margin-left: auto;
 }
 
 .o-calendar__grid {
   display: grid;
   grid-template-columns: 1fr repeat(7, 1fr);
-  grid-template-rows: repeat(17, 1fr);
+  grid-template-rows: repeat(16, minmax(50px, auto));
   gap: 1px;
-  background-color: var(--neutral-500);
+  background-color: var(--neutral-400);
+  position: relative;
 }
 
 .o-calendar__cell {
   background-color: white;
-  border: 1px solid var(--neutral-500);
+  border: 1px solid var(--neutral-400);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,4 +146,12 @@
   padding: 1rem;
   background-color: var(--neutral-400);
   color: var(--neutral-600);
+}
+
+.o-calendar__event {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  z-index: 1;
 }

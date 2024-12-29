@@ -30,8 +30,10 @@
 
   <main class="o-calendar">
     <div class="o-calendar__header">
-      <button class="o-calendar__button">Week</button>
-      <button class="o-calendar__button o-calendar__button--today">Today</button>
+      <div class="o-calendar__button-group">
+  <button class="o-calendar__button">Week</button>
+  <button class="o-calendar__button o-calendar__button--today">Today</button>
+</div>
 
       <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
@@ -214,6 +216,11 @@
       <div class="o-calendar__cell"></div>
       <div class="o-calendar__cell"></div>
       <div class="o-calendar__cell"></div>
+
+      <article class="o-calendar__event" style="grid-row: 2 / 4; grid-column: 3;">
+        <h2 class="o-calendar__event-title">Team Meeting</h2>
+        <p class="o-calendar__event-details">8:00 AM - 10:00 AM</p>
+      </article>
     </div>
   </main>
 
