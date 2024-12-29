@@ -10,9 +10,56 @@
 }
 
 /* Utility */
+
+.primary {
+    color: #3f6ff3;
+}
+
+.secondary {
+    color: #e2e9fd;
+}
+
+.neutral-300 {
+    color: #f8f9fb;
+}
+
+.neutral-400 {
+    color: #eceff4;
+}
+
+.neutral-500 {
+    color: #c5cfdd;
+}
+
+.neutral-600 {
+    color: #a2aab3;
+}
+
+.green {
+    color: #70d36b;
+}
+
+.yellow {
+    color: #ffcb05;
+}
+
+.red {
+    color: #ff5d54;
+}
+
 .font-text{
     Font: Roboto Slab;
 }
+
+.margin-bottom-auto{
+    margin-bottom: auto;
+}
+
+.grid-span-vertical{
+    grid-row: 1/12;
+}
+
 /* Block */
 
 /* Exception */
+

@@ -15,10 +15,13 @@ ul, ol, menu {
 html {
     font-size: calc(1.2rem + 0.1vw);
     line-height: 1.5;
+    
 }
 
 body {
     font-family: system-ui;
+    height: 100%;
+    width: 100%;
 }
 
 button {
