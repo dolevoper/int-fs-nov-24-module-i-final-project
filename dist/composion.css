@@ -31,9 +31,33 @@ main .toggle {
 main .second-header {
   display: flex;
 }
+main .second-header li {
+  list-style: none;
+  flex-grow: 0.38;
+}
 main .second-header .chevron {
   display: flex;
 }
+main .second-header .chevron p {
+  margin-inline: 0.3rem;
+}
 main .second-header button {
   margin-inline: 0.4rem;
+}
+main .top-main {
+  display: flex;
+  text-align: center;
+}
+main .top-main li {
+  list-style: none;
+  flex: 1;
+}
+main .side-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+main .side-main li {
+  flex: 1;
+  color: white;
 }

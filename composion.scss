@@ -36,13 +36,41 @@ main{
         .second-header{
             display: flex;
 
+            li{
+                list-style: none;
+                flex-grow: 0.38;
+            }
+
             .chevron{
                 display: flex;
+
+                p{
+                    margin-inline: 0.3rem;
+                }
                 
             }
 
             button{
                 margin-inline: 0.4rem;
+            }
+        }
+
+        .top-main{
+            display: flex;
+            text-align: center;
+
+            li{
+                list-style: none;
+                flex: 1;
+            }
+        }
+        .side-main{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            li{
+                flex: 1;
+                color: white;
             }
         }
 
