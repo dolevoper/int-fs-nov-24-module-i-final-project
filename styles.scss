@@ -162,116 +162,88 @@ body {
     margin: 0;
   }
 
-  /* Toggle Button */
-.toggleSwitch span span {
-	display: none;
-}  
-  
-.toggleSwitch {
-	display: inline-block;
-	height: 1.8rem;
-	position: relative;
-	overflow: visible;
-	padding: 0;
-	cursor: pointer;
-	width: 200px;
-	background-color: var(--white);
-	border: 1px solid var(--neutral-600);
-	border-radius:1rem;
-	height:34px;
-}
-.toggleSwitch * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.toggleSwitch label,
-.toggleSwitch > span {
-	line-height: 20px;
-	height: 20px;
-	vertical-align: middle;
-}
-.toggleSwitch input:focus ~ a,
-.toggleSwitch input:focus + label {
-	outline: none;
-}
-.toggleSwitch label {
-	position: relative;
-	z-index: 3;
-	display: block;
-	width: 100%;
-}
-.toggleSwitch input {
-	position: absolute;
-	opacity: 0;
-	z-index: 5;
-}
-.toggleSwitch > span {
-	position: absolute;
-	left: 0;
-	width: calc(100% - 6px);
-	margin: 0;
-	text-align: left;
-	white-space: nowrap;
-  margin:0 3px;
-}
-.toggleSwitch > span span {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 5;
-	display: block;
-	width: 50%;
-	margin-left: 50px;
-	text-align: left;
-	font-size: 0.9em;
-	width: auto;
-	left: 0;
-	top: -1px;
-	opacity: 1;
-	width:40%;
-	text-align: center;
-  line-height:34px;
-}
-.toggleSwitch a {
-	position: absolute;
-	right: 50%;
-	z-index: 4;
-	display: block;
-	top: 3px;
-	bottom: 3px;
-	padding: 0;
-	left: 3px;
-	width: 50%;
-	background-color: var(--primary);
-	border-radius: 1rem;
-	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.toggleSwitch > span span:first-of-type {
-	color: var(--white);
-	opacity: 1;
-	left: 0;
-	margin: 0;
-    width: 50%;
-}
-.toggleSwitch > span span:last-of-type {
-	left:auto;
-	right:0;
-	color: var(--neutral-600);
-	margin: 0;
-    width: 50%;
+/* Component: Toggle Switch */
+.c-toggle {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 34px;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 1px solid var(--neutral-600);
+  border-radius: 1rem;
 }
 
-.toggleSwitch input:checked ~ a {
-	left: calc(50% - 3px);
+.c-toggle__input {
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
 }
-.toggleSwitch input:checked ~ span span:first-of-type {
-	left:0;
-	color:var(--neutral-600);
+
+.c-toggle__label {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
 }
-.toggleSwitch input:checked ~ span span:last-of-type {
-	color:var(--white);
+
+.c-toggle__track {
+  position: absolute;
+  left: 0;
+  width: calc(100% - 6px);
+  margin: 0 3px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.c-toggle__option {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 0.9em;
+}
+
+.c-toggle__option--left {
+  left: 0;
+  color: var(--white);
+}
+
+.c-toggle__option--right {
+  right: 0;
+  color: var(--neutral-600);
+}
+
+.c-toggle__slider {
+  position: absolute;
+  z-index: 4;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  width: 50%;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* States */
+.c-toggle__input:checked ~ .c-toggle__slider {
+  left: calc(50% - 3px);
+}
+
+.c-toggle__input:checked ~ .c-toggle__track .c-toggle__option--left {
+  color: var(--neutral-600);
+}
+
+.c-toggle__input:checked ~ .c-toggle__track .c-toggle__option--right {
+  color: var(--white);
+}
+
+/* Utilities */
+.u-visually-hidden {
+  display: none;
 }
