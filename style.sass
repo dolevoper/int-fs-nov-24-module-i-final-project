@@ -1,19 +1,58 @@
 // Variables
-$primary-color: #0066ff
-$secondary-color: #f5f5f5
-$font-stack: 'Arial', sans-serif
+$primary-color: #3f6ff3
+$secondary-color: #e2e9fd
+$neutral-300: #f8f9fb
+$neutral-400: #eceff4
+$neutral-500: #c5cfdd
+$neutral-600: #a2aab3
+$green: #70d36b
+$yellow: #ffcb05
+$red: #ff5d54
+
+$font-stack: 'Roboto Slab'
 
 // Base styles
 * 
-  margin: 0
-  padding: 0
-  box-sizing: border-box
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 
 body 
-  font-family: $font-stack
-  line-height: 1.6
-  background-color: $secondary-color
-  color: #333
-  display: flex
-  flex-direction: column
-  min-height: 100vh
+    font-family: $font-stack
+    line-height: 1.6
+    background-color: $secondary-color
+    height: 100vh
+
+body
+    display: flex
+
+main
+    width: 100%
+    display: flex
+    flex-direction: column
+    margin: 1rem
+
+
+sidenav_Title
+    color: $primary-color
+    font-size: 1.5rem
+
+menu
+    margin: 0
+    padding: 0
+    width: fit-content
+    height: 100%
+
+sidenav_Box
+    background-color: red
+    width: fit-content
+    height: 100vh
+    border-right: 1px solid black
+    padding: 1rem
+    gap: 1rem
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+
+Hamburger_BTN
