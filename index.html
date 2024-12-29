@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/style.css" />
-    <link rel="stylesheet" href="dist/calendarStyle.css">
+    <link rel="stylesheet" href="dist/calendarStyle.css" />
     <title>Calendar</title>
   </head>
 
@@ -42,193 +42,233 @@
         </button>
       </nav>
     </header>
-      <section class="icon-set">
-        <h1 class="icon-set__title">Icon Set</h1>
-        <ul class="icon-list">
-          <li class="icon-list__item">
-            <!-- home -->
-            <svg
-              class="icon icon--home"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M12 3.1875L21.4501 10.275L21.0001 11.625H20.25V20.25H3.75005V11.625H3.00005L2.55005 10.275L12 3.1875ZM5.25005 10.125V18.75H18.75V10.125L12 5.0625L5.25005 10.125Z"
-              ></path>
-            </svg>
-            <span class="icon-list__label">Home</span>
-          </li>
-          <li class="icon-list__item">
-              <!-- suitcase -->
-              <svg
-                class="icon icon--suitcase"
-                viewBox="0 0 24 24"
-                width="32"
-                height="32"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M6 5V4C6 2.34315 7.34315 1 9 1H15C16.6569 1 18 2.34315 18 4V5H20C21.6569 5 23 6.34315 23 8V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V8C1 6.34315 2.34315 5 4 5H6ZM8 4C8 3.44772 8.44772 3 9 3H15C15.5523 3 16 3.44772 16 4V5H8V4ZM19.882 7H4.11803L6.34164 11.4472C6.51103 11.786 6.8573 12 7.23607 12H11C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12H16.7639C17.1427 12 17.489 11.786 17.6584 11.4472L19.882 7ZM11 14H7.23607C6.09975 14 5.06096 13.358 4.55279 12.3416L3 9.23607V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V9.23607L19.4472 12.3416C18.939 13.358 17.9002 14 16.7639 14H13C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14Z"
-                ></path>
-              </svg>
-              <span class="icon-list__label">Work</span>
-          </li>
-          <li class="icon-list__item">
-              <!-- calendar -->
-              <svg
-                class="icon icon--calendar"
-                viewBox="0 0 24 24"
-                width="32"
-                height="32"
-                aria-hidden="true"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path
-                d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
-                stroke-width="2" stroke-linecap="round"></path>
-              </svg>
-              <span class="icon-list__label">Calendar</span>
-          </li>
-          <li class="icon-list__item">
-
-              <!-- clipboard -->
-              <svg
-              class="icon icon--clipboard"
-                viewBox="0 0 24 24"
-                width="32"
-                height="32"
-                aria-hidden="true"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path
-                  d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V10.0002C3 7.17179 3 5.75757 3.87868 4.87889C4.64706 4.11051 5.82497 4.01406 8 4.00195"
-                  stroke-width="1.5"
-                ></path>
-                <path d="M8 14H16" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M7 10.5H17" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M9 17.5H15" stroke-width="1.5" stroke-linecap="round"></path>
-                <path
-                  d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z"
-                  stroke-width="1.5"
-                ></path>
-              </svg>
-              <span class="icon-list__label">Clipboard</span>
-          </li>
-        </ul>
-      </section>
+    <section class="icon-set">
+      <h1 class="icon-set__title">Icon Set</h1>
+      <ul class="icon-list">
+        <li class="icon-list__item">
+          <!-- home -->
+          <svg
+            class="icon icon--home"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 3.1875L21.4501 10.275L21.0001 11.625H20.25V20.25H3.75005V11.625H3.00005L2.55005 10.275L12 3.1875ZM5.25005 10.125V18.75H18.75V10.125L12 5.0625L5.25005 10.125Z"
+            ></path>
+          </svg>
+          <span class="icon-list__label">Home</span>
+        </li>
+        <li class="icon-list__item">
+          <!-- suitcase -->
+          <svg
+            class="icon icon--suitcase"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 5V4C6 2.34315 7.34315 1 9 1H15C16.6569 1 18 2.34315 18 4V5H20C21.6569 5 23 6.34315 23 8V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V8C1 6.34315 2.34315 5 4 5H6ZM8 4C8 3.44772 8.44772 3 9 3H15C15.5523 3 16 3.44772 16 4V5H8V4ZM19.882 7H4.11803L6.34164 11.4472C6.51103 11.786 6.8573 12 7.23607 12H11C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12H16.7639C17.1427 12 17.489 11.786 17.6584 11.4472L19.882 7ZM11 14H7.23607C6.09975 14 5.06096 13.358 4.55279 12.3416L3 9.23607V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V9.23607L19.4472 12.3416C18.939 13.358 17.9002 14 16.7639 14H13C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14Z"
+            ></path>
+          </svg>
+          <span class="icon-list__label">Work</span>
+        </li>
+        <li class="icon-list__item">
+          <!-- calendar -->
+          <svg
+            class="icon icon--calendar"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path
+              d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+          <span class="icon-list__label">Calendar</span>
+        </li>
+        <li class="icon-list__item">
+          <!-- clipboard -->
+          <svg
+            class="icon icon--clipboard"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path
+              d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V10.0002C3 7.17179 3 5.75757 3.87868 4.87889C4.64706 4.11051 5.82497 4.01406 8 4.00195"
+              stroke-width="1.5"
+            ></path>
+            <path d="M8 14H16" stroke-width="1.5" stroke-linecap="round"></path>
+            <path
+              d="M7 10.5H17"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M9 17.5H15"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z"
+              stroke-width="1.5"
+            ></path>
+          </svg>
+          <span class="icon-list__label">Clipboard</span>
+        </li>
+      </ul>
+    </section>
     <main class="main-content">
-        <section class="calendar">
-          <header class="calendar__header">
-            <button class="calendar__nav-button calendar__nav-button--prev" aria-label="Previous month">
-              <!-- chevron left -->
-    <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
-        <g
-          id="Page-1"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
-          sketch:type="MSPage"
-        >
-          <g
-            id="Icon-Set-Filled"
-            sketch:type="MSLayerGroup"
-            transform="translate(-423.000000, -1196.000000)"
-            fill="#000000"
+      <section class="calendar">
+        <header class="calendar__header">
+          <button
+            class="calendar__nav-button calendar__nav-button--prev"
+            aria-label="Previous month"
           >
-            <path
-              d="M428.115,1209 L437.371,1200.6 C438.202,1199.77 438.202,1198.43 437.371,1197.6 C436.541,1196.76 435.194,1196.76 434.363,1197.6 L423.596,1207.36 C423.146,1207.81 422.948,1208.41 422.985,1209 C422.948,1209.59 423.146,1210.19 423.596,1210.64 L434.363,1220.4 C435.194,1221.24 436.541,1221.24 437.371,1220.4 C438.202,1219.57 438.202,1218.23 437.371,1217.4 L428.115,1209"
-              id="chevron-left"
-              sketch:type="MSShapeGroup"
-            ></path>
-          </g>
-        </g>
-      </svg>
-            </button>
-            <h1 class="calendar__month">January 2024</h1>
-            <button class="calendar__nav-button calendar__nav-button--next" aria-label="Next month">
-              <!-- chevron right -->
-    <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
-        <g
-          id="Page-1"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
-          sketch:type="MSPage"
-        >
-          <g
-            id="Icon-Set-Filled"
-            sketch:type="MSLayerGroup"
-            transform="translate(-474.000000, -1196.000000)"
-            fill="#000000"
+            <!-- chevron left -->
+            <svg
+              viewBox="-5.5 0 26 26"
+              fill="currentColor"
+              width="1em"
+              height="1em"
+            >
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                sketch:type="MSPage"
+              >
+                <g
+                  id="Icon-Set-Filled"
+                  sketch:type="MSLayerGroup"
+                  transform="translate(-423.000000, -1196.000000)"
+                  fill="#000000"
+                >
+                  <path
+                    d="M428.115,1209 L437.371,1200.6 C438.202,1199.77 438.202,1198.43 437.371,1197.6 C436.541,1196.76 435.194,1196.76 434.363,1197.6 L423.596,1207.36 C423.146,1207.81 422.948,1208.41 422.985,1209 C422.948,1209.59 423.146,1210.19 423.596,1210.64 L434.363,1220.4 C435.194,1221.24 436.541,1221.24 437.371,1220.4 C438.202,1219.57 438.202,1218.23 437.371,1217.4 L428.115,1209"
+                    id="chevron-left"
+                    sketch:type="MSShapeGroup"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <label for="prev-month" class="calendar__prev-month">Prev</label>
+          </button>
+          <h1 class="calendar__month">January 2024</h1>
+          <button
+            class="calendar__nav-button calendar__nav-button--next"
+            aria-label="Next month"
           >
-            <path
-              d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
-              id="chevron-right"
-              sketch:type="MSShapeGroup"
-            ></path>
-          </g>
-        </g>
-      </svg>
-            </button>
-          </header>
-          
-          <div class="calendar__days-of-week">
-            <span>Sun</span>
-            <span>Mon</span>
-            <span>Tue</span>
-            <span>Wed</span>
-            <span>Thu</span>
-            <span>Fri</span>
-            <span>Sat</span>
-          </div>
-          
-          <div class="calendar__days">
-            <!-- Example days for January 2024 -->
-            <div class="calendar__day"></div> <!-- Empty day for alignment -->
-            <div class="calendar__day">1</div>
-            <div class="calendar__day">2</div>
-            <div class="calendar__day">3</div>
-            <div class="calendar__day">4</div>
-            <div class="calendar__day">5</div>
-            <div class="calendar__day">6</div>
-            <div class="calendar__day">7</div>
-            <div class="calendar__day">8</div>
-            <div class="calendar__day">9</div>
-            <div class="calendar__day">10</div>
-            <div class="calendar__day">11</div>
-            <div class="calendar__day">12</div>
-            <div class="calendar__day">13</div>
-            <div class="calendar__day">14</div>
-            <div class="calendar__day">15</div>
-            <div class="calendar__day">16</div>
-            <div class="calendar__day">17</div>
-            <div class="calendar__day">18</div>
-            <div class="calendar__day">19</div>
-            <div class="calendar__day">20</div>
-            <div class="calendar__day">21</div>
-            <div class="calendar__day">22</div>
-            <div class="calendar__day">23</div>
-            <div class="calendar__day">24</div>
-            <div class="calendar__day">25</div>
-            <div class="calendar__day">26</div>
-            <div class="calendar__day">27</div>
-            <div class="calendar__day">28</div>
-            <div class="calendar__day">29</div>
-            <div class="calendar__day">30</div>
-            <div class="calendar__day">31</div>
-          </div>
-        </section>
-      </main>
+            <!-- chevron right -->
+            <svg
+              viewBox="-5.5 0 26 26"
+              fill="currentColor"
+              width="1em"
+              height="1em"
+            >
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                sketch:type="MSPage"
+              >
+                <g
+                  id="Icon-Set-Filled"
+                  sketch:type="MSLayerGroup"
+                  transform="translate(-474.000000, -1196.000000)"
+                  fill="#000000"
+                >
+                  <path
+                    d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+                    id="chevron-right"
+                    sketch:type="MSShapeGroup"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <label for="next-month" class="calendar__next-month">Next</label>
+          </button>
+          <input
+            type="radio"
+            id="prev-month"
+            name="month"
+            class="calendar__radio-btn"
+          />
+          <input
+            type="radio"
+            id="next-month"
+            name="month"
+            class="calendar__radio-btn"
+          />
+        </header>
+
+        <div class="calendar__days-of-week">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+
+        <div class="calendar__days">
+          <!-- Example days for January 2024 -->
+          <div class="calendar__day-item"></div>
+          <!-- Empty day for alignment -->
+          <div class="calendar__day-item">1</div>
+          <div class="calendar__day-item">2</div>
+          <div class="calendar__day-item">3</div>
+          <div class="calendar__day-item">4</div>
+          <div class="calendar__day-item">5</div>
+          <div class="calendar__day-item">6</div>
+          <div class="calendar__day-item">7</div>
+          <div class="calendar__day-item">8</div>
+          <div class="calendar__day-item">9</div>
+          <div class="calendar__day-item">10</div>
+          <div class="calendar__day-item">11</div>
+          <div class="calendar__day-item">12</div>
+          <div class="calendar__day-item">13</div>
+          <div class="calendar__day-item">14</div>
+          <div class="calendar__day-item">15</div>
+          <div class="calendar__day-item">16</div>
+          <div class="calendar__day-item">17</div>
+          <div class="calendar__day-item">18</div>
+          <div class="calendar__day-item">19</div>
+          <div class="calendar__day-item">20</div>
+          <div class="calendar__day-item">21</div>
+          <div class="calendar__day-item">22</div>
+          <div class="calendar__day-item">23</div>
+          <div class="calendar__day-item">24</div>
+          <div class="calendar__day-item">25</div>
+          <div class="calendar__day-item">26</div>
+          <div class="calendar__day-item">27</div>
+          <div class="calendar__day-item">28</div>
+          <div class="calendar__day-item">29</div>
+          <div class="calendar__day-item">30</div>
+          <div class="calendar__day-item">31</div>
+        </div>
+      </section>
+    </main>
 
     <!-- kebab -->
     <svg
@@ -261,9 +301,5 @@
         stroke-linejoin="round"
       ></path>
     </svg>
-
-    
-
-    
   </body>
 </html>
