@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="dist/calendarStyle.css">
     <title>Calendar</title>
   </head>
 
@@ -41,8 +42,6 @@
         </button>
       </nav>
     </header>
-
-    <main class="main-content">
       <section class="icon-set">
         <h1 class="icon-set__title">Icon Set</h1>
         <ul class="icon-list">
@@ -125,10 +124,111 @@
           </li>
         </ul>
       </section>
-    </main>
-
-
-
+    <main class="main-content">
+        <section class="calendar">
+          <header class="calendar__header">
+            <button class="calendar__nav-button calendar__nav-button--prev" aria-label="Previous month">
+              <!-- chevron left -->
+    <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
+        <g
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+          sketch:type="MSPage"
+        >
+          <g
+            id="Icon-Set-Filled"
+            sketch:type="MSLayerGroup"
+            transform="translate(-423.000000, -1196.000000)"
+            fill="#000000"
+          >
+            <path
+              d="M428.115,1209 L437.371,1200.6 C438.202,1199.77 438.202,1198.43 437.371,1197.6 C436.541,1196.76 435.194,1196.76 434.363,1197.6 L423.596,1207.36 C423.146,1207.81 422.948,1208.41 422.985,1209 C422.948,1209.59 423.146,1210.19 423.596,1210.64 L434.363,1220.4 C435.194,1221.24 436.541,1221.24 437.371,1220.4 C438.202,1219.57 438.202,1218.23 437.371,1217.4 L428.115,1209"
+              id="chevron-left"
+              sketch:type="MSShapeGroup"
+            ></path>
+          </g>
+        </g>
+      </svg>
+            </button>
+            <h1 class="calendar__month">January 2024</h1>
+            <button class="calendar__nav-button calendar__nav-button--next" aria-label="Next month">
+              <!-- chevron right -->
+    <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
+        <g
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+          sketch:type="MSPage"
+        >
+          <g
+            id="Icon-Set-Filled"
+            sketch:type="MSLayerGroup"
+            transform="translate(-474.000000, -1196.000000)"
+            fill="#000000"
+          >
+            <path
+              d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
+              id="chevron-right"
+              sketch:type="MSShapeGroup"
+            ></path>
+          </g>
+        </g>
+      </svg>
+            </button>
+          </header>
+          
+          <div class="calendar__days-of-week">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+          </div>
+          
+          <div class="calendar__days">
+            <!-- Example days for January 2024 -->
+            <div class="calendar__day"></div> <!-- Empty day for alignment -->
+            <div class="calendar__day">1</div>
+            <div class="calendar__day">2</div>
+            <div class="calendar__day">3</div>
+            <div class="calendar__day">4</div>
+            <div class="calendar__day">5</div>
+            <div class="calendar__day">6</div>
+            <div class="calendar__day">7</div>
+            <div class="calendar__day">8</div>
+            <div class="calendar__day">9</div>
+            <div class="calendar__day">10</div>
+            <div class="calendar__day">11</div>
+            <div class="calendar__day">12</div>
+            <div class="calendar__day">13</div>
+            <div class="calendar__day">14</div>
+            <div class="calendar__day">15</div>
+            <div class="calendar__day">16</div>
+            <div class="calendar__day">17</div>
+            <div class="calendar__day">18</div>
+            <div class="calendar__day">19</div>
+            <div class="calendar__day">20</div>
+            <div class="calendar__day">21</div>
+            <div class="calendar__day">22</div>
+            <div class="calendar__day">23</div>
+            <div class="calendar__day">24</div>
+            <div class="calendar__day">25</div>
+            <div class="calendar__day">26</div>
+            <div class="calendar__day">27</div>
+            <div class="calendar__day">28</div>
+            <div class="calendar__day">29</div>
+            <div class="calendar__day">30</div>
+            <div class="calendar__day">31</div>
+          </div>
+        </section>
+      </main>
 
     <!-- kebab -->
     <svg
@@ -162,54 +262,8 @@
       ></path>
     </svg>
 
-    <!-- chevron left -->
-    <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
-      <g
-        id="Page-1"
-        stroke="none"
-        stroke-width="1"
-        fill="none"
-        fill-rule="evenodd"
-        sketch:type="MSPage"
-      >
-        <g
-          id="Icon-Set-Filled"
-          sketch:type="MSLayerGroup"
-          transform="translate(-423.000000, -1196.000000)"
-          fill="#000000"
-        >
-          <path
-            d="M428.115,1209 L437.371,1200.6 C438.202,1199.77 438.202,1198.43 437.371,1197.6 C436.541,1196.76 435.194,1196.76 434.363,1197.6 L423.596,1207.36 C423.146,1207.81 422.948,1208.41 422.985,1209 C422.948,1209.59 423.146,1210.19 423.596,1210.64 L434.363,1220.4 C435.194,1221.24 436.541,1221.24 437.371,1220.4 C438.202,1219.57 438.202,1218.23 437.371,1217.4 L428.115,1209"
-            id="chevron-left"
-            sketch:type="MSShapeGroup"
-          ></path>
-        </g>
-      </g>
-    </svg>
+    
 
-    <!-- chevron right -->
-    <svg viewBox="-5.5 0 26 26" fill="currentColor" width="1em" height="1em">
-      <g
-        id="Page-1"
-        stroke="none"
-        stroke-width="1"
-        fill="none"
-        fill-rule="evenodd"
-        sketch:type="MSPage"
-      >
-        <g
-          id="Icon-Set-Filled"
-          sketch:type="MSLayerGroup"
-          transform="translate(-474.000000, -1196.000000)"
-          fill="#000000"
-        >
-          <path
-            d="M488.404,1207.36 L477.637,1197.6 C476.806,1196.76 475.459,1196.76 474.629,1197.6 C473.798,1198.43 473.798,1199.77 474.629,1200.6 L483.885,1209 L474.629,1217.4 C473.798,1218.23 473.798,1219.57 474.629,1220.4 C475.459,1221.24 476.806,1221.24 477.637,1220.4 L488.404,1210.64 C488.854,1210.19 489.052,1209.59 489.015,1209 C489.052,1208.41 488.854,1207.81 488.404,1207.36"
-            id="chevron-right"
-            sketch:type="MSShapeGroup"
-          ></path>
-        </g>
-      </g>
-    </svg>
+    
   </body>
 </html>
