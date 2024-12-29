@@ -98,7 +98,7 @@ label:hover {
   color: #555;
 }
 
-.dropdownbutton .dropdown-button {
+.dropdown-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
