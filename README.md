@@ -1,4 +1,4 @@
-the result is:
+the result is in:
 https://gregoryb79.netlify.app/
 
 # Module I Final Project
