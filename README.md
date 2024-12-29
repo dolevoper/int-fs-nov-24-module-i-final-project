@@ -1,3 +1,6 @@
+the result is:
+https://gregoryb79.netlify.app/
+
 # Module I Final Project
 
 ## The goal
