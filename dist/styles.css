@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 1px limegreen;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+input {
+  display: none;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav {
+  width: fit-content;
+  height: 100%;
+  padding: 1rem;
+  border-right: 1px black solid;
+}
+
+.main__header {
+  display: inline;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.main--header--btn {
+  border-radius: 0.5rem;
+}
+
+.main__toggle__container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main__toggle__label {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  display: block;
+}
+
+.secondary__header {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.month__display__container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar {
+  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 5fr);
+  grid-template-rows: repeat(12, 2fr);
+}
+
+.time__column {
+  grid-row-start: 1;
+  grid-row-end: 13;
+  width: min-content;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.time__column li {
+  width: fit-content;
+}
+
+.day__row {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.fullstack {
+  background-color: yellow;
+  border: 1px yellow solid;
+  border-radius: 1rem;
+  grid-row: 3/6;
+  grid-column: 4/5;
+}
+
+.fullstack2 {
+  grid-column: 4/5;
+  grid-row: 7/9;
+}
+
+.toggle__container {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.brunch {
+  border: 1px green solid;
+  background-color: green;
+  border-radius: 1rem;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.routine {
+  border: 1px blue solid;
+  background-color: blue;
+  border-radius: 1rem;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.calendar div {
+  align-content: center;
+  text-align: center;
+}
