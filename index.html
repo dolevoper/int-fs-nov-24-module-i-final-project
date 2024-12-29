@@ -25,7 +25,12 @@
         <label for="agenda" class="toggle-button">Agenda</label>
       </div>
       <div class="button-container">
-        <div class="dots">...</div>
+        <div class="dots">    <!-- kebab -->
+            <svg fill="currentColor" viewBox="0 0 24 24" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z">
+                </path>
+            </svg></div>
         <button class="create-event-btn">    <!-- plus -->
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="1em" height="1em"
                 xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +39,12 @@
             </svg> Create event</button>
       </div>
     </main>
+    <article class="secondrow">
+        <button class="dropdown-button">
+            Week
+            <span class="arrow"></span>
+          </button>
+
     <div class="month-navigation">
         <!-- Chevron Left -->
         <span class="arrow">
@@ -59,6 +70,7 @@
             </svg>
         </span>
     </div>
+</article>
       <aside class="sidebar">
     <div class="class="container">
     <nav>

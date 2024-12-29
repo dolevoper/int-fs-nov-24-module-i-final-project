@@ -102,7 +102,27 @@
     color: #555; 
   }
   
+.dropdownbutton
 
+  .dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9edff;
+    color: #3759e7;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 100px;
+    padding-left: 60;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-button:hover {
+    background-color: #d8e0ff;
+  }
 
 
 
