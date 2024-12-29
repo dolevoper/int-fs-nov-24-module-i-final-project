@@ -68,9 +68,8 @@ label:hover {
 .parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(12, 1fr);
   gap: 8px;
-  padding-left: 100px;
+  padding-left: 200px;
 }
 
 .month-navigation {
@@ -117,4 +116,9 @@ label:hover {
 
 .dropdown-button:hover {
   background-color: #d8e0ff;
+}
+
+header {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
