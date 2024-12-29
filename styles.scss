@@ -113,19 +113,74 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     gap: var(--min-menu-gap, 1rem);
+}
+
+.u-main-item{
+    background-color: var(--primatry-color);    
+}
+
+.u-appointment-item{
+    background-color: var(--Green);    
+}
+
+.u-text-color-300{
+    color: var(--neutral-300);
+}
+
+.u-external-item{
+    background-color: var(--Yellow);
+}
+
+.u-radius-16{
+    border-radius: 1rem;
+}
+
+.u-secondary{
+    color: var(--neutral-600);
+}
+
+.u-primary{
+    color: var(--primatry-color);
+}
+
+.u-font-32{
+    font-size: 2rem;
+}
+
+.u-font-24{
+    font-size: 1.5rem;
 }
 // ******** End of Utilities *****
 
 // ********* Block ************
+.main-menu{
+    height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--min-menu-gap, 1rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.sidebar{
+    width: 4rem;
+    font-size: 1.5rem;
+}
+
+.logo{
+    color: var(--primatry-color);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 .days{
     display: grid;
     grid-column: 2 / -1; /* Starts from the second column, spanning the rest */
-    grid-template-columns: repeat(7, 1fr); /* 7 equal columns for each day */
-    // padding: 0;
-    // list-style: none;
-    margin: 0;
-    
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns for each day */      
     li{
         text-align: center;
     }
@@ -139,7 +194,24 @@ main{
         text-align: center; 
     }
 }
+.item01{
+    grid-area: 2 / 2 / 4 /3;
+    text-align: center;
+}
 
+.item02{
+    grid-area: 4 / 4 / 5 /5;
+    text-align: center;
+}
 
+.item03{
+    grid-area:  3 / 5 / 6 /6;;
+    text-align: center;
+}
+
+.item04{
+    grid-area: 7 / 5 / 9 /6;
+    text-align: center;
+}
 
 // ******END of Block
