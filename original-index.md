@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-</head>
-
-<body>
-    <!-- hamburger -->
+ <!-- hamburger
     <svg viewBox="0 0 100 100" width="1em" height="1em" fill="currentColor">
         <rect x="10" y="25" width="80" height="10" rx="10" />
         <rect x="10" y="45" width="80" height="10" rx="10" />
@@ -95,7 +85,4 @@ zx
                     id="chevron-right" sketch:type="MSShapeGroup"> </path>
             </g>
         </g>
-    </svg>
-</body>
-
-</html>
+    </svg> -->g
