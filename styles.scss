@@ -62,6 +62,14 @@
 
 
 /* Block */
+button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #3f6ff3;
+}
+
 .nav{
     display: flex;
     flex-direction: column;
