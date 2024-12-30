@@ -1,0 +1,81 @@
+body {
+  display: flex;
+}
+
+.side-bar {
+  padding: 0.3rem;
+}
+.side-bar li {
+  margin-top: 18rem;
+  list-style: none;
+}
+.side-bar .top-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.side-bar .top-sidebar svg {
+  font-size: 1.8rem;
+  margin-left: 0.3rem;
+  margin-top: 1rem;
+}
+.side-bar .middle-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.side-bar .middle-sidebar svg {
+  font-size: 1.8rem;
+  margin-left: 0.3rem;
+  margin-top: 2.4rem;
+}
+
+main {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+main .top-header {
+  display: flex;
+  text-align: center;
+  padding: 0.3rem;
+}
+main .top-header svg {
+  margin-top: 0.6rem;
+  margin-inline: 0.3rem;
+}
+main .toggle {
+  flex: 1;
+  margin-top: 0.3rem;
+}
+main .second-header {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+main .second-header li {
+  list-style: none;
+  flex-grow: 0.38;
+}
+main .second-header .chevron {
+  display: flex;
+}
+main .second-header .chevron p {
+  margin-inline: 0.3rem;
+}
+main .second-header button {
+  margin-inline: 0.4rem;
+}
+main .top-main {
+  display: flex;
+  text-align: center;
+}
+main .top-main li {
+  list-style: none;
+  flex: 1;
+}
+main .side-main {
+  display: flex;
+  flex-direction: column;
+}
+main .side-main li {
+  margin-bottom: 1.4rem;
+  color: white;
+}
