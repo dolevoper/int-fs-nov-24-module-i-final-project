@@ -45,33 +45,36 @@ h1, h2, h3, h4, h5, h6 {
   line-height: inherit;
 }
 
-.main {
-  display: grid;
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 10vw;
 }
 
-.grid8-12 {
-  display: grid;
-  grid-template: repeat(8, 1fr)/repeat(12, 1fr);
-  overflow: hidden;
-  gap: 0.2rem;
+.nav--top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
 }
-.grid8-12 > .hours {
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 2/13;
-  grid-template-rows: subgrid;
-  grid-auto-flow: row;
+
+.nav--middle {
+  gap: 3rem;
 }
-.grid8-12 > .hours > li {
-  display: contents;
+
+.mainpage {
+  display: flex;
+  width: 90vw;
+  height: 100vh;
 }
-.grid8-12 > .days {
-  display: grid;
-  grid-column: 2/9;
-  grid-row: 1/2;
-  grid-template-columns: subgrid;
-  grid-auto-flow: column;
+
+.calendermenu, .toppage {
+  display: flex;
+  flex-direction: row;
 }
-.grid8-12 > .days > li {
-  display: contents;
+
+.Calendartable {
+  width: 90vw;
 }
